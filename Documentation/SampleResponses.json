@@ -1,0 +1,254 @@
+
+//Get Status
+{
+  "Code": "1",
+  "Message": "GetStatus",
+  "QRCode": "",
+  "FDMSInvoiceNo": "",
+  "FiscalDayNo": "",
+  "VerificationCode": "",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "fiscalDayStatus": "FiscalDayClosed",
+    "fiscalDayReconciliationMode": "Auto",
+    "fiscalDayServerSignature": {
+      "certificateThumbprint": "F9B28",
+      "hash": "DmQbYlC0V",
+      "signature": "I4="
+    },
+    "fiscalDayClosed": "2024-10-04T16:23:19",
+    "lastReceiptGlobalNo": 3,
+    "lastFiscalDayNo": 2,
+    "operationID": "0HN713L9NBGKM:00000001"
+  }
+}
+
+//GetConfig
+{
+  "Code": "1",
+  "Message": "GetConfig",
+  "QRCode": "",
+  "FDMSInvoiceNo": "",
+  "FiscalDayNo": "",
+  "VerificationCode": "",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "taxPayerName": "Axis Solutions Pvt Ltd",
+    "taxPayerTIN": "2000152399",
+    "vatNumber": "220192567",
+    "deviceSerialNo": "C6BCACD98A5B7890",
+    "deviceBranchName": "Axis Solutions",
+    "deviceBranchAddress": {
+      "province": "Harare",
+      "city": "Harare",
+      "street": "Bargate Road, Vainona",
+      "houseNo": "60"
+    },
+    "deviceBranchContacts": {
+      "phoneNo": "0778612578",
+      "email": "developers@axissol.com"
+    },
+    "deviceOperatingMode": "Online",
+    "taxPayerDayMaxHrs": 24,
+    "applicableTaxes": [
+      {
+        "taxName": "Exempt",
+        "validFrom": "2023-01-01T00:00:00",
+        "taxID": 1
+      },
+      {
+        "taxPercent": 0.0,
+        "taxName": "Zero rate 0%",
+        "validFrom": "2023-01-01T00:00:00",
+        "taxID": 2
+      },
+      {
+        "taxPercent": 15.0,
+        "taxName": "Standard rated 15%",
+        "validFrom": "2023-01-01T00:00:00",
+        "taxID": 3
+      },
+      {
+        "taxPercent": 5.0,
+        "taxName": "Non-VAT Withholding Tax",
+        "validFrom": "2024-01-01T00:00:00",
+        "taxID": 514
+      }
+    ],
+    "certificateValidTill": "2027-10-04T09:42:17",
+    "qrUrl": "https://fdmstest.zimra.co.zw",
+    "taxpayerDayEndNotificationHrs": 2,
+    "operationID": "0HN713L9NBKM0:00000001"
+  }
+}
+
+//OpenFiscalDay
+{
+  "Code": "1",
+  "Message": "Fiscal Day Opened: FiscalDayOpened ",
+  "QRCode": "",
+  "FDMSInvoiceNo": "",
+  "FiscalDayNo": "",
+  "VerificationCode": "",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "fiscalDayNo": 3,
+    "operationID": "0HN713L9NBKUQ:00000001",
+    "LastFiscalDayReport": {
+      "FiscalDayOpened": "2024-10-07T10:26:41",
+      "FiscalDayClosed": "2024-10-07T10:26:41",
+      "DeviceSerialNumber": "C6BCACD98A5B7890",
+      "FiscalDayNumber": "2",
+      "DailyTotals": {}
+    }
+  }
+}
+//SubmitReceipt
+{
+  "Code": "1",
+  "Message": "Fiscal Invoice Queued",
+  "QRCode": "https://fdmstest.zimra.co.zw/000001848907102024000000000450BB025DA548377B",
+  "FDMSInvoiceNo": "4",
+  "FiscalDayNo": "3",
+  "VerificationCode": "50BB-025D-A548-377B",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "receipt": {
+      "receiptType": "FiscalInvoice",
+      "receiptCurrency": "USD",
+      "receiptCounter": 1,
+      "receiptGlobalNo": 4,
+      "invoiceNo": "AXIMOS-1234567890",
+      "buyerData": {
+        "buyerRegisterName": "Test Company",
+        "buyerTradeName": "Test Company",
+        "buyerTIN": "1234567890",
+        "VATNumber": "123456789",
+        "buyerContacts": {
+          "phoneNo": "0770000000",
+          "email": "test@test.com"
+        },
+        "buyerAddress": {
+          "province": "Harare",
+          "street": "Test Street",
+          "houseNo": "01",
+          "city": "Harare"
+        }
+      },
+      "receiptNotes": "Test Invoice",
+      "receiptDate": "2024-10-07T10:27:57",
+      "creditDebitNote": null,
+      "receiptLinesTaxInclusive": true,
+      "receiptLines": [
+        {
+          "receiptLineName": "Test Item - Vatable Item",
+          "receiptLineNo": 1,
+          "receiptLineQuantity": 1.000,
+          "receiptLineType": "Sale",
+          "receiptLineTotal": 100.00,
+          "taxID": 3,
+          "receiptLineHSCode": "",
+          "receiptLinePrice": 100.000,
+          "taxCode": "A",
+          "taxPercent": 15.00
+        },
+        {
+          "receiptLineName": "Test - No Vat Item",
+          "receiptLineNo": 2,
+          "receiptLineQuantity": 1.000,
+          "receiptLineType": "Sale",
+          "receiptLineTotal": 100.00,
+          "taxID": 2,
+          "receiptLineHSCode": "",
+          "receiptLinePrice": 100.000,
+          "taxCode": "B",
+          "taxPercent": 0.0
+        }
+      ],
+      "receiptTaxes": [
+        {
+          "salesAmountWithTax": 100.00,
+          "taxAmount": 0.00,
+          "taxID": 2,
+          "taxCode": "B",
+          "taxPercent": 0.0
+        },
+        {
+          "salesAmountWithTax": 100.00,
+          "taxAmount": 13.04,
+          "taxID": 3,
+          "taxCode": "A",
+          "taxPercent": 15.00
+        }
+      ],
+      "receiptPayments": [
+        {
+          "moneyTypeCode": "CASH",
+          "paymentAmount": 200.00
+        }
+      ],
+      "receiptTotal": 200.00,
+      "receiptPrintForm": "InvoiceA4",
+      "receiptDeviceSignature": {
+        "hash": "hbH5YKsQWn4xeCvPuAfTEqUKJ252S9IJmKFJyFm1aJg=",
+        "signature": "YBdilBDZqtgCM/EDmwl8SwfTuAxrwsrEyYgJjNJ3uxk282BgUn9E9QeKH9S7MzpxQtHKxyAEsbBjUrK9VgdsrTji9r20EQKMDEZByLM4EXOP2shC9HtQ713+FF7W2pObvrYtkzd6DBph6wficL6/ry0A0vTxGFPnYABe9i44YVXLonxv7FeCq739XxR1ffE2J0ewGjT3A3aToeUnTRbSp2wr95aJczT5Xu1HgOCyZvzEpMUhkyno8a1FKcFX1LOTsP1dLi3QbDGnu9GvdtpikgEYU4/tbbBpcblCMWqLCd5zH0HrL1Mn1+KyH9+HtHs2BzHf60mP0pWjwvub66jQhA=="
+      }
+    }
+  }
+}
+
+//CloseFiscalDay
+{
+  "Code": "1",
+  "Message": "Fiscal Day Closed: FiscalDayClosed",
+  "QRCode": "",
+  "FDMSInvoiceNo": "",
+  "FiscalDayNo": "",
+  "VerificationCode": "",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "FiscalDayOpened": "2024-10-07T10:26:41",
+    "FiscalDayClosed": "2024-10-07T10:28:38",
+    "DeviceSerialNumber": "C6BCACD98A5B7890",
+    "FiscalDayNumber": "3",
+    "DailyTotals": {
+      "USD": {
+        "Documents": {
+          "FiscalInvoice": {
+            "Count": 1,
+            "TotalAmount": 200.0,
+            "VatableTotal": 100.0,
+            "NonVatableTotal": 100.0,
+            "TotalTax": 13.04,
+            "VatableTaxRate": "15"
+          }
+        },
+        "TotalDocumentsCount": 1,
+        "TotalDocumentsAmount": 200.0
+      }
+    }
+  }
+}
+
+//GetLicense
+{
+  "Code": "1",
+  "Message": "GetLicense",
+  "QRCode": "",
+  "FDMSInvoiceNo": "",
+  "FiscalDayNo": "",
+  "VerificationCode": "",
+  "VerificationLink": "https://fdmstest.zimra.co.zw",
+  "DeviceID": "18489",
+  "Data": {
+    "Status": "paid",
+    "StartDate": "2024-10-04",
+    "EndDate": "2025-10-04"
+  }
+}
+

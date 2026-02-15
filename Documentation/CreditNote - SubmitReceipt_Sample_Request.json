@@ -1,0 +1,35 @@
+{
+  "receiptType": "CreditNote",
+  "receiptCurrency": "USD",
+  "invoiceNo": "TEST-CRN-A001",
+  "referenceNumber": "TEST-INV-A001",
+  "invoiceAmount": -1200,
+  "invoiceTaxAmount": -156.52,
+  "receiptNotes": "Wrong Goods Sold",
+  "receiptLinesTaxInclusive": true,
+  "moneyTypeCode": "Cash",
+  "receiptPrintForm": "InvoiceA4",
+  "buyerRegisterName": "Axis Solutions Africa",
+  "buyerTradeName": "Axis Solutions",
+  "vatNumber": 220192567,
+  "buyerTIN": 2000152399,
+  "buyerPhoneNo": "08677004041",
+  "buyerEmail": "developers@axissol.com",
+  "buyerProvince": "Harare",
+  "buyerStreet": "Arundel Road, Alexandra Park",
+  "buyerHouseNo": "14",
+  "buyerCity": "Harare",
+  "receiptLines": [
+    {
+      "receiptLineType": "Sale",
+      "receiptLineNo": 1,
+      "receiptLineHSCode": "99001000",
+      "receiptLineName": "Test Item",
+      "receiptLinePrice": -0.2,
+      "receiptLineQuantity": 6000,
+      "receiptLineTotal": -1200,
+      "taxCode": "A",
+      "taxPercent": 15
+    }
+  ]
+}
